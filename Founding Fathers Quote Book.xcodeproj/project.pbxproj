@@ -13,8 +13,9 @@
 		A12C06D421480BF90063911B /* Founding_Fathers_Quote_Book.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A12C06D221480BF90063911B /* Founding_Fathers_Quote_Book.xcdatamodeld */; };
 		A12C06D621480BFB0063911B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A12C06D521480BFB0063911B /* Assets.xcassets */; };
 		A12C06D921480BFB0063911B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12C06D721480BFB0063911B /* LaunchScreen.storyboard */; };
-		A12C06E421480BFB0063911B /* Founding_Fathers_Quote_BookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C06E321480BFB0063911B /* Founding_Fathers_Quote_BookTests.swift */; };
-		A12C06EF21480BFB0063911B /* Founding_Fathers_Quote_BookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C06EE21480BFB0063911B /* Founding_Fathers_Quote_BookUITests.swift */; };
+		A12C06FF214A0A680063911B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12C06FE214A0A680063911B /* WebKit.framework */; };
+		A12C0701214A0B040063911B /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C0700214A0B040063911B /* QuoteViewController.swift */; };
+		A12C0703214A0BBF0063911B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A12C0702214A0BBF0063911B /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +45,10 @@
 		A12C06D821480BFB0063911B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A12C06DA21480BFB0063911B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A12C06DF21480BFB0063911B /* Founding Fathers Quote BookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Founding Fathers Quote BookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A12C06E321480BFB0063911B /* Founding_Fathers_Quote_BookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Founding_Fathers_Quote_BookTests.swift; sourceTree = "<group>"; };
-		A12C06E521480BFB0063911B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A12C06EA21480BFB0063911B /* Founding Fathers Quote BookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Founding Fathers Quote BookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A12C06EE21480BFB0063911B /* Founding_Fathers_Quote_BookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Founding_Fathers_Quote_BookUITests.swift; sourceTree = "<group>"; };
-		A12C06F021480BFB0063911B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A12C06FE214A0A680063911B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A12C0700214A0B040063911B /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
+		A12C0702214A0BBF0063911B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A12C06FF214A0A680063911B /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +80,11 @@
 		A12C06BF21480BF90063911B = {
 			isa = PBXGroup;
 			children = (
+				A12C0702214A0BBF0063911B /* Default-568h@2x.png */,
 				A12C06CA21480BF90063911B /* Founding Fathers Quote Book */,
-				A12C06E221480BFB0063911B /* Founding Fathers Quote BookTests */,
-				A12C06ED21480BFB0063911B /* Founding Fathers Quote BookUITests */,
 				A12C06C921480BF90063911B /* Products */,
+				A12C06FC21480C470063911B /* Supporting Files */,
+				A12C06FD214A0A680063911B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,33 +101,31 @@
 		A12C06CA21480BF90063911B /* Founding Fathers Quote Book */ = {
 			isa = PBXGroup;
 			children = (
-				A12C06CB21480BF90063911B /* AppDelegate.swift */,
-				A12C06CD21480BF90063911B /* ViewController.swift */,
-				A12C06CF21480BF90063911B /* Main.storyboard */,
-				A12C06D521480BFB0063911B /* Assets.xcassets */,
-				A12C06D721480BFB0063911B /* LaunchScreen.storyboard */,
 				A12C06DA21480BFB0063911B /* Info.plist */,
-				A12C06D221480BF90063911B /* Founding_Fathers_Quote_Book.xcdatamodeld */,
+				A12C0700214A0B040063911B /* QuoteViewController.swift */,
+				A12C06CD21480BF90063911B /* ViewController.swift */,
+				A12C06D521480BFB0063911B /* Assets.xcassets */,
+				A12C06CF21480BF90063911B /* Main.storyboard */,
 			);
 			path = "Founding Fathers Quote Book";
 			sourceTree = "<group>";
 		};
-		A12C06E221480BFB0063911B /* Founding Fathers Quote BookTests */ = {
+		A12C06FC21480C470063911B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A12C06E321480BFB0063911B /* Founding_Fathers_Quote_BookTests.swift */,
-				A12C06E521480BFB0063911B /* Info.plist */,
+				A12C06CB21480BF90063911B /* AppDelegate.swift */,
+				A12C06D721480BFB0063911B /* LaunchScreen.storyboard */,
+				A12C06D221480BF90063911B /* Founding_Fathers_Quote_Book.xcdatamodeld */,
 			);
-			path = "Founding Fathers Quote BookTests";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A12C06ED21480BFB0063911B /* Founding Fathers Quote BookUITests */ = {
+		A12C06FD214A0A680063911B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A12C06EE21480BFB0063911B /* Founding_Fathers_Quote_BookUITests.swift */,
-				A12C06F021480BFB0063911B /* Info.plist */,
+				A12C06FE214A0A680063911B /* WebKit.framework */,
 			);
-			path = "Founding Fathers Quote BookUITests";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A12C06D921480BFB0063911B /* LaunchScreen.storyboard in Resources */,
+				A12C0703214A0BBF0063911B /* Default-568h@2x.png in Resources */,
 				A12C06D621480BFB0063911B /* Assets.xcassets in Resources */,
 				A12C06D121480BF90063911B /* Main.storyboard in Resources */,
 			);
@@ -260,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A12C06D421480BF90063911B /* Founding_Fathers_Quote_Book.xcdatamodeld in Sources */,
+				A12C0701214A0B040063911B /* QuoteViewController.swift in Sources */,
 				A12C06CE21480BF90063911B /* ViewController.swift in Sources */,
 				A12C06CC21480BF90063911B /* AppDelegate.swift in Sources */,
 			);
@@ -269,7 +271,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A12C06E421480BFB0063911B /* Founding_Fathers_Quote_BookTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +278,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A12C06EF21480BFB0063911B /* Founding_Fathers_Quote_BookUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
